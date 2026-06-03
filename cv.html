@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - FOGUE ARTHUR</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; background: #f0f2f5; }
+        .cv-container { background: white; padding: 50px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        header { border-bottom: 2px solid #11d9d9; padding-bottom: 20px; margin-bottom: 30px; display: flex; align-items: center; gap: 20px; }
+        .profile-img { width: 4cm; height: 4cm; border-radius: 8px; object-fit: cover; border: 2px solid #11d9d9; }
+        .header-info { flex-grow: 1; }
+        .section { margin-bottom: 25px; }
+        .item { margin-bottom: 15px; }
+        .item-title { font-weight: bold; display: flex; justify-content: space-between; }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .print-btn { background: #11d9d9; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-bottom: 20px; }
+        @media print { .print-btn { display: none; } body { background: white; padding: 0; } .cv-container { box-shadow: none; padding: 0; } }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Imprimer / Sauvegarder en PDF</button>
+    
+    <div class="cv-container">
+        <header>
+            <img src="images/a3.jpg" alt="Photo" class="profile-img">
+            <div class="header-info">
+                <h1>CHOUGOUNG FOGUE ARTHUR</h1>
+                <p>Data Scientist en devenir | Étudiant en Génie Informatique</p>
+            </div>
+            <div class="contact-info">
+                <p>Douala, Cameroun</p>
+                <p>Email: foguearthur69@gmail.com</p>
+                <p>Tel: +237 692080231.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Profil Professionnel</h2>
+            <p>Étudiant passionné par l'exploitation des données et le développement web. Rigoureux et créatif, je cherche un stage pour approfondir mes compétences en SQL, Python et analyse de données pour résoudre des problèmes complexes.</p>
+        </section>
+
+        <section class="section">
+            <h2>Formation</h2>
+            <div class="item">
+                <div class="item-title">
+                    <span>DUT en Génie Informatique</span>
+                    <span>2026 - Présent</span>
+                </div>
+                <p>IUT de Douala - Spécialisation genie informatique</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projets Académiques</h2>
+            <div class="item">
+                <div class="item-title">
+                    <span>Gestionnaire de Cinéma (Web)</span>
+                </div>
+                <p>Conception d'une plateforme de réservation avec HTML/CSS/JS.</p>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span>Application Commerciale (BBD)</span>
+                </div>
+                <p>Interface graphique reliée à MySQL pour la gestion de stocks.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div><strong>Langages:</strong> Python, SQL, JS, HTML/CSS</div>
+                <div><strong>Outils:</strong> VS Code, MySQL, Node.js</div>
+                <div><strong>Soft Skills:</strong> Adaptabilité, Résolution de problèmes</div>
+                <div><strong>Langues:</strong> Français (Langue maternelle), Anglais (Intermédiaire)</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>)</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
