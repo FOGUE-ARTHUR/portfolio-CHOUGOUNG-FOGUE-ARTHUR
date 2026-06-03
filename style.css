@@ -84,11 +84,16 @@ button {
 .about img {
   width: 250px;
   height: 250px;
+  min-width: 250px;
+  min-height:250px;
+  max-width: 250px;
+  max-height:250px;
   border-radius: 50%;
   border: 5px solid #11d9d9;
   object-fit: cover;
-  object-position: center;
-  flex-shrink: 0;
+  object-position: center top;
+  aspect-ratio: 1 / 1;
+  flex: 0 0 250px;
 }
 
 .cards {
