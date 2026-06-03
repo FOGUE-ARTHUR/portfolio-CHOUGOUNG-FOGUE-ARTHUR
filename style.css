@@ -87,6 +87,8 @@ button {
   border-radius: 50%;
   border: 5px solid #11d9d9;
   object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
 }
 
 .cards {
