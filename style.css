@@ -70,14 +70,14 @@ section {
   justify-content: space-between;
   align-items: center;
   background: white;
-  gap: 20px; /* Réduit de 60px à 20px */
+  gap: 10px; /* Réduit de 60px à 20px */
   padding: 80px 100px;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .hero-text {
-  flex: 0 0 55%; /* Le texte prend 55% de largeur */
+  flex: 0 0 60%; /* Le texte prend 55% de largeur */
   max-width: none;
 }
 
@@ -94,9 +94,9 @@ section {
 }
 
 .hero-img {
-  flex: 0 0 40%; /* L'image prend 40% et est poussée à gauche */
+  flex: 0 0 35%; /* L'image prend 40% et est poussée à gauche */
   max-width: 450px;
-  margin-left: -30px; /* Recule l'image vers la gauche */
+  margin-left: -60px; /* Recule l'image vers la gauche */
 }
 
 button {
