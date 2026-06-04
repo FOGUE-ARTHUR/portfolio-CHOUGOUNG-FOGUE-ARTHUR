@@ -63,19 +63,22 @@ section {
 }
 
 /* =========================
-   HERO - FIX 2 LIGNES COMME TA CAPTURE
+   HERO - FIX IMAGE + 2 LIGNES
 ========================= */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  gap: 60px;
+  gap: 20px; /* Réduit de 60px à 20px */
+  padding: 80px 100px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-text {
-  flex: 1;
-  max-width: 600px;
+  flex: 0 0 55%; /* Le texte prend 55% de largeur */
+  max-width: none;
 }
 
 .hero h2 {
@@ -83,7 +86,7 @@ section {
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 25px;
-  max-width: 515px; /* CORRIGÉ : Coupe après "Data scientist en" */
+  /* Plus de max-width, on laisse le flex gérer */
 }
 
 .hero h2 span {
@@ -91,8 +94,9 @@ section {
 }
 
 .hero-img {
-  flex: 1;
-  max-width: 500px;
+  flex: 0 0 40%; /* L'image prend 40% et est poussée à gauche */
+  max-width: 450px;
+  margin-left: -30px; /* Recule l'image vers la gauche */
 }
 
 button {
