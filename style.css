@@ -71,6 +71,9 @@ section {
   align-items: center;
   background: white;
   gap: 60px;
+  padding: 80px 100px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-text {
