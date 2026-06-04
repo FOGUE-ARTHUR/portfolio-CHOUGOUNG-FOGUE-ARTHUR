@@ -227,7 +227,7 @@ button:hover {
 .js { width: 75%; }
 
 /* =========================
-   CONTACT - TAILLE IDENTIQUE À TON CSS
+   CONTACT
 ========================= */
 .contact {
   background: #0b0b0b;
@@ -337,104 +337,206 @@ footer span {
 
 /* =========================
    RESPONSIVE TÉLÉPHONE < 768px
+   Calqué sur ta maquette Figma
 ========================= */
 @media (max-width: 768px) {
+  /* HEADER : Menu reste visible mais compact */
   header {
-    padding: 15px 20px;
+    padding: 12px 15px;
+  }
+  
+  nav h1 {
+    font-size: 14px;
   }
   
   nav ul {
-    display: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav a {
+    font-size: 11px;
   }
   
   .burger {
-    display: block;
+    display: none;
   }
 
   section {
     padding: 40px 20px;
   }
 
-  /* HERO MOBILE : IMAGE D'ABORD, TEXTE APRÈS */
+  /* HERO : Texte puis Image dessous */
   .hero {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    gap: 25px;
   }
 
-  .hero-img {
-    order: -1;
-    max-width: 280px;
-    margin-bottom: 20px;
-  }
-
-  .hero h2 {
-    font-size: 24px;
-  }
-
-  button {
+  .hero-text {
     width: 100%;
   }
 
-  /* ABOUT MOBILE : IMAGE D'ABORD, TEXTE APRÈS */
+  .hero h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    order: 2;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 14px;
+    width: auto;
+  }
+
+  /* A PROPOS : Texte + Photo à droite qui chevauche */
   .about {
     flex-direction: column;
     padding: 30px 20px;
-    text-align: center;
+    gap: 15px;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .about-text {
+    width: 100%;
+    padding-right: 80px;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .about img {
-    width: 180px;
-    height: 180px;
-    order: -1;
-    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #11d9d9;
+    position: absolute;
+    right: 20px;
+    top: 60px;
   }
 
-  /* PROJETS MOBILE : 1 SEUL PAR LIGNE */
+  /* PROJETS : 1 card par ligne */
   .cards {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   
   .card {
     width: 100%;
-    max-width: 350px;
+    max-width: 100%;
+    padding: 20px;
   }
 
-  /* SKILLS MOBILE */
+  .card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .project-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* SKILLS : Hard skills au-dessus de Soft skills */
   .skills-section {
-    padding: 60px 20px;
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 25px;
   }
   
   .skill-card {
     width: 100%;
-    padding: 25px;
+    padding: 25px 20px;
   }
 
-  .section-title {
-    font-size: 32px;
+  .skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
-  /* CONTACT MOBILE : CHAMPS EMPILÉS */
+  .skill-info {
+    font-size: 14px;
+  }
+
+  .skill-bar {
+    height: 10px;
+  }
+
+  /* CONTACT : Champs empilés */
   .contact {
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
 
   .contact-content h1 {
-    font-size: 32px;
+    font-size: 28px;
+    margin-bottom: 30px;
   }
 
   .form-row {
     flex-direction: column;
     gap: 0;
+    margin-bottom: 0;
   }
 
-  .btn-center button {
-    font-size: 20px;
-    padding: 15px 40px;
-    width: 100%;
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 12px;
+    font-size: 14px;
   }
 
   .input-group textarea {
-    height: 150px;
+    height: 120px;
+  }
+
+  .btn-center button {
+    font-size: 18px;
+    padding: 12px 40px;
+    width: 100%;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 25px 20px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 14px;
+    text-align: center;
   }
 }
