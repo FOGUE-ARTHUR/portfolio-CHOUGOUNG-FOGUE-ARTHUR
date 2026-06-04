@@ -79,10 +79,11 @@ section {
 }
 
 .hero h2 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 25px;
+  max-width: 520px;
 }
 
 .hero h2 span {
