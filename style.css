@@ -336,18 +336,18 @@ footer span {
 }
 
 /* =========================
-   MOBILE : ON SCALE LA VERSION PC
-   Rien ne bouge, tout se réduit
+   MOBILE : VERSION PC RÉDUITE MAIS LISIBLE
 ========================= */
 @media (max-width: 768px) {
   html {
-    font-size: 40%; /* Réduit toutes les tailles de police */
+    font-size: 50%; /* Avant 40%, maintenant 50% = plus grand */
   }
 
   body {
-    min-width: 1440px; /* Force la largeur PC */
-    transform: scale(0.27); /* Réduit à 27% pour iPhone 390px */
+    min-width: 1440px;
+    transform: scale(0.32); /* Avant 0.27, maintenant 0.32 = plus grand */
     transform-origin: top left;
     width: 1440px;
     overflow-x: hidden;
   }
+}
